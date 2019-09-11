@@ -1,0 +1,9 @@
+<h1>My new blog</h1>
+
+{% for post in posts %}
+
+<h2>{{ post.title }}</h2>
+
+{{ post.body|safe }}
+
+{% endfor %}
